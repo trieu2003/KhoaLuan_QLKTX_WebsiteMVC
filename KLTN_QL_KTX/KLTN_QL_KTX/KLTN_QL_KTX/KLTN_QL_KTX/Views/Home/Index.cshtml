@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ký Túc Xá Trường Đại Học Công Thương TP.HCM - Đăng Nhập</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .left-panel {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .brand-name {
+            color: #2e4175;
+            font-size: 3.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .brand-tagline {
+            color: #2e4175;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .right-panel {
+            width: 50%;
+            background: linear-gradient(to bottom, #4a7a8c, #2e4175);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            color: white;
+        }
+
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            background: transparent;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin: 1rem 0 2rem;
+        }
+
+        .forgot-password a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .login-button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: white;
+            color: #2e4175;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #f0f0f0;
+        }
+        <style>
+             @Html.Raw("@media (max-width: 768px) { body { flex-direction: column; } }")
+    </style>
+    </style>
+
+
+
+</head>
+<body>
+    <div class="left-panel">
+        <div class="logo">
+            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60,50 C50,40 40,60 50,70 C60,80 70,60 60,50" fill="#4EB18D" />
+                <path d="M80,40 C70,30 60,50 70,60 C80,70 90,50 80,40" fill="#F19EC2" />
+                <path d="M100,35 C90,25 80,45 90,55 C100,65 110,45 100,35" fill="#F9D949" />
+                <path d="M120,40 C110,30 100,50 110,60 C120,70 130,50 120,40" fill="#C683D7" />
+            </svg>
+        </div>
+        <div class="brand-name">KÝ TÚC XÁ</div>
+        <div class="brand-tagline">TRƯỜNG ĐẠI HỌC CÔNG THƯƠNG TP.HCM</div>
+    </div>
+    <div class="right-panel">
+        <div class="login-form">
+            <h1 class="login-title">ĐĂNG NHẬP</h1>
+            <form>
+                <div class="form-group">
+                    <label for="employee-id">Mã Nhân Viên</label>
+                    <input type="text" id="employee-id" name="employee-id">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật Khẩu</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Quên Mật Khẩu?</a>
+                </div>
+                <button type="submit" class="login-button">Đăng Nhập</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
